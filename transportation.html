@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti - Transportation </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        
+            <img src="images/iphone_timebattery.png" alt="Time and Battery" class="search">
+            <br>
+            <div class="heading-wrapper">
+            <br><br>
+            <img src="images/palm_tree.png" alt="Palm Tree" class="palm-logo">
+            <a href="index.html">
+                <img src="images/taniti_logo.png" alt="Taniti Logo" class="taniti-logo">
+            </a>
+            <button class="search-button" id="searchButton">
+                <img src="images/palm_search.png" alt="Search Image" class="side-image">
+            </button>
+            <button class="fries-button" id="friesButton">
+                <img src="images/fries_menu.png" alt="Fries Menu" class="fries">
+            </button>
+        </div>
+
+        <div class="sidebar" id="sidebar" aria-hidden="true">
+            <div class="sidebar-content">
+                <a href="index.html" class="sidebar-link"><img src="images/home_logo.png" alt="Home"><br>Home</a>
+                <a href="transportation.html" class="sidebar-link-transportation" style="text-align: center;"><img src="images/transportation_icon.png" alt="Transportation" class="transportation-icon"><br>Transportation</a>
+                <!-- <a href="transportation.html" class="sidebar-link"><img src="images/cars_icon.png" alt="Cars"><br>Cars</a>
+                <a href="page3.html" class="sidebar-link"><img src="images/cruises_icon.png" alt="Cruises"><br>Cruises</a> -->
+                <a href="stays.html" class="sidebar-link"><img src="images/stays_icon.png" alt="Stays"><br>Stays</a>
+                <a href="dining.html" class="sidebar-link"><img src="images/dining_icon.png" alt="Dining"><br>Dining</a>
+                <a href="events.html" class="sidebar-link"><img src="images/events_icon.png" alt="Things to Do"><br>Things to Do</a>
+                <a href="info.html" class="sidebar-link"><img src="images/info_icon.png" alt="Info"><br>Info</a>
+                <a href="sources.html" class="sidebar-link"><img src="images/sources_icon.png" alt="Sources"><br>Sources</a>
+            </div>
+        </div>
+
+        <div id="searchPopup" class="search-popup">
+            <div class="search-popup-content">
+                <span class="close">&times;</span>
+                <h2>Search Taniti</h2>
+                <input type="text" id="searchInput" placeholder="Enter search term...">
+                <button id="searchSubmit" class="search-submit">Search</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <p style="font-weight: bold; ">Taniti - Transportation</p>
+            
+            <img src="images/rental_car.png" alt="Rental Car" class="logo" style="float: right; padding-left: 5px; height: 120px;">
+            <!-- <a href="explore.html">
+                <img src="images/explore_button.png" alt="Explore" class="logo" style="float: right; padding-top: 5px; padding-left: 5px; padding-bottom: 5px;">
+            </a> -->
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua. 
+                </p>
+            </div>
+            <a href="#">
+                <img src="images/rent_now_btn.png" alt="Rent" class="logo" style="float: right; padding-left: 5px; padding-bottom: 5px; width: 175px;">
+            </a>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua.  
+            </p>
+            <img src="images/cruise_ship.png" alt="Cruise Ship Image" class="logo" style="float: left; padding-right: 5px; width: 180px; height: 120px;">
+            <a href="#">
+                <img src="images/cruise_now_btn.png" alt="Cruise" class="logo" style="float: left; padding-top: 5px; padding-right: 5px; width: 175px;">
+            </a>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua. 
+            </p>
+            <img src="images/flights_tahiti2.png" alt="Flights Image" class="logo" style="float: right; padding-top: 5px; padding-left: 5px; height: 120px;">
+            <a href="#">
+                <img src="images/fly_now_btn.png" alt="Fly" class="logo" style="float: right; padding-top: 5px; padding-left: 5px;">
+            </a>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Sed do eiusmod tempor incididunt ut labore. ipsum dolor sit amet.
+            </p>
+             <!-- <p style="font-size: small; position: relative;" >2024 <a href="index.html">Taniti ©</a> All rights reserved.</p> -->
+            <!-- <br> -->
+
+            <div style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                <p style="font-size: small; position: absolute; bottom: 0;">2024 <a href="index.html">Taniti ©</a> All rights reserved.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navtoggle collapsed">
+        <div class="nav-toggle" id="btn">
+            <img src="images/arrow-right.png" alt="Toggle Icon" style="width: 25px; height: 25px;" id="toggle-icon">
+        </div>
+        <div class="nav-content">
+            <a href="index.html" class="nav-link">
+                <img src="images/home_logo.png" alt="Home" class="nav-icon">
+            </a>
+            <a href="transportation.html" class="nav-link">
+                <img src="images/transportation_icon.png" alt="Transportation" class="transportation-icon">
+            </a>
+            <a href="stays.html" class="nav-link">
+                <img src="images/stays_icon.png" alt="Stays" class="nav-icon">
+            </a>
+            <a href="info.html" class="nav-link">
+                <img src="images/info_icon.png" alt="Info" class="nav-icon">
+            </a>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btn = document.querySelector('#btn');
+            const navtoggle = document.querySelector('.navtoggle');
+            const toggleIcon = document.getElementById('toggle-icon');
+
+            btn.onclick = function () {
+                if (navtoggle.classList.contains('collapsed')) {
+                    navtoggle.classList.remove('collapsed');
+                    navtoggle.classList.add('expanded');
+                    toggleIcon.src = 'images/arrow-left.png'; // Change to left arrow when expanded
+                } else {
+                    navtoggle.classList.remove('expanded');
+                    navtoggle.classList.add('collapsed');
+                    toggleIcon.src = 'images/arrow-right.png'; // Change to right arrow when collapsed
+                }
+            };
+
+            const friesButton = document.getElementById('friesButton');
+            const sidebar = document.getElementById('sidebar');
+
+            friesButton.onclick = function () {
+                if (sidebar.classList.contains('open')) {
+                    sidebar.classList.remove('open');
+                    sidebar.setAttribute('aria-hidden', 'true');
+                } else {
+                    sidebar.classList.add('open');
+                    sidebar.setAttribute('aria-hidden', 'false');
+                }
+            };
+        });
+        const searchButton = document.getElementById('searchButton');
+            const searchPopup = document.getElementById('searchPopup');
+            const closePopup = document.querySelector('.search-popup .close');
+
+            searchButton.onclick = function () {
+                searchPopup.style.display = 'block';
+            };
+
+            closePopup.onclick = function () {
+                searchPopup.style.display = 'none';
+            };
+
+            window.onclick = function (event) {
+                if (event.target == searchPopup) {
+                    searchPopup.style.display = 'none';
+                }
+            };
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+        const searchButton = document.getElementById('searchButton');
+        const searchPopup = document.getElementById('searchPopup');
+        const closePopup = document.querySelector('.search-popup .close');
+
+        searchButton.onclick = function () {
+            searchPopup.style.display = 'block';
+        };
+
+        closePopup.onclick = function () {
+            searchPopup.style.display = 'none';
+        };
+
+        window.onclick = function (event) {
+            if (event.target == searchPopup) {
+                searchPopup.style.display = 'none';
+            }
+        };
+    });
+    </script>
+</body>
+</html>
